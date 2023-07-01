@@ -26,13 +26,12 @@
 	    	- git init
     3. git hub 저장소와 원격으로 연결
     		- git remote add origin https://github.com/Zoonhyeong/MSS23.git
-			                          ---------------------------------------
-							                         				깃허브 주소
-    4. git hub 저장소에 있는 파일들을 가져오기 (신버전으로 업데이트)
-    		- git pull origin master
-    		※ refusing to merge unrelated historis 에러 발생 시
-    		- git pull origin master --allow-unrelated-histories From 
-    				https://github.com/Zoonhyeong/MSS23.git
+                                        --------------------------------------
+       							깃허브 주소
+    5. git hub 저장소에 있는 파일들을 가져오기 (신버전으로 업데이트)
+	- git pull origin master
+		※ refusing to merge unrelated historis 에러 발생 시
+	- git pull origin master --allow-unrelated-histories From https://github.com/Zoonhyeong/MSS23.git
     
     ----------------------------------------------------------------------------------------
     5. push를 할 파일 컴퓨터에서 가져오기
