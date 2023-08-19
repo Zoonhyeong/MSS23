@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            margin: auto;
+            z-index: 1;
+        }
+
+        .wrap {
+            float: left;
+        }
+
+        a, img {
+            position: relative;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .userInfo {
+            position: relative;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .menu1 {
+        width: 35%;
+        padding:2em;
+        background-color: yellow;
+        word-spacing:25px;
+        }
+        
+        .menu2 {
+            position: relative;
+            top: -83px;
+            left: 350px;
+            width: 65%;
+            padding:2em;
+        background-color: whitesmoke;
+        word-spacing:25px;
+        }
+
+        .ad {
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        .topBar {
+            display: flex;
+            justify-content: right;
+            margin-top: 50px;
+        }
+
+        .border-separator {
+            font-size: 15px;
+  padding-right: 0.1em;
+  border-right: 1px solid #000;
+  margin-right: 0.5em;
+}
+
+        .box {
+            z-index: 0;
+            position: absolute;
+            top:-1px;
+            width: 100%;
+            height:60%;
+            background-color:  #f3e8e3;
+        }
+   
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="wrap">
+                        <img src="국민은행.png" alt="국민은행" width="110" 
+                        a href="https://www.kbstar.com">
+                    <div class="userInfo">
+                        <input class="btn1" type="button" value="로그인">
+                        <input class="btn2" type="button" value="인증센터">
+                    </div>
+            </div>
+            <div class="topBar" >
+                <span class="border-separator"
+                >개인 기업
+                </span>
+                <span class="border-separator">
+                금융상품
+                </span>
+                <span class="border-separator">
+                자산관리 부동산 퇴직연금 카드
+                </span>
+                <span class="border-separator">
+                전체서비스
+                </span>
+                <span class="border-separator">
+                global
+                </span>
+                <span>
+                    <img src="돋보기.png" alt="돋보기" width="10px">
+                </span>
+
+                
+            </div>
+            <img class="ad" src="배너.png" width=980px alt="배너">
+        </header>
+    
+        <div class="menu1">
+            전체계좌조회    계좌이체    빠른조회
+        </div>
+        
+        <div class="menu2">
+        <span class="border-separator">
+         보안센터
+        </span>
+        <span class="border-separator">
+        고객우대제도
+        </span>
+        <span class="border-separator">
+         소비자보호
+        </span>
+        <span class="border-separator">
+        상담/예약
+        </span>               
+        상품공시실
+        </div>
+
+
+        
+    </div>
+    <div class="box">
+        
+    </div>
+
+   
+   
+</body>
+</html>
