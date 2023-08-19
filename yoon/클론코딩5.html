@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            margin: auto;
+            z-index: 1;
+        }
+
+        .wrap {
+            float: left;
+        }
+
+        a, img {
+            position: relative;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .userInfo {
+            position: relative;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .menu1 {
+        position: inherit;
+        width: 35%;
+        padding:30px;
+        background-color: rgb(247, 208, 72);
+        word-spacing:38px;
+        font-size: 17px;
+        letter-spacing: -0.1em;
+        box-shadow: 0px 5px 30px 0px rgb(216, 216, 216);
+        }
+
+        .menu2 {
+            position: relative;
+            top: -105px;
+            left: 350px;
+            width: 65%;
+            padding:30.98px;
+            background-color: white;
+            font-size: 15px;
+            word-spacing:23px;
+            letter-spacing: -0.1em;
+            box-shadow: 5px 5px 30px 0px rgb(216, 216, 216);
+        }
+
+        .ad {
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        .topBar {
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;
+            font-size: 14px;
+        }
+
+        .border-separator1 {
+            padding-right: 0.1em;
+            border-right: 1px solid #4d4d4d;
+            margin-right: 0.5em;
+        }
+
+        .border-separator2 {
+            padding-right: 0.1em;
+            border-right: 1px solid #dadada;
+            margin-right: 0.5em;
+        }
+
+        .shortcut {
+            font-size: 12px;
+        }
+
+        .newsList, .title {
+            float: left;
+            list-style-type: none;
+        }
+
+        .box {
+            z-index: 0;
+            position: absolute;
+            top:-1px;
+            width: 100%;
+            height:63.5%;
+            background-color: rgb(245, 233, 229);
+        }
+
+        
+        .bn img{
+            padding-top: 50px;
+            width:28%;
+            float: left;
+            margin-right : 50px;
+        }
+
+        .content{
+            vertical-align: top;
+            margin: 0px;
+            padding-top: 50px;
+            float: left;
+        }
+
+        .middle{
+            padding-top: 50px;
+            float: right;
+        }
+
+        .um{
+            padding-top: 50px;
+            float: left;
+            width: 700px;
+            height: 200px;
+            
+        }
+        
+        .authenticate{
+            padding-top: 50px;
+            float: right;
+        }
+
+        
+        table {
+            font-size: 12px;
+        }
+        
+        .um2{
+            padding-top: 50px;
+            float: left;
+            width: 700px;
+            height: 200px;
+        }
+
+        th, td{
+            padding: 30px;
+        }
+
+        .app{
+            padding-top: 50px;
+            padding-right: 500px;
+            float: left;
+        }
+
+        .appicon img {
+            width:15%;
+            padding-top: 50px;
+            float:left;
+        }
+
+    </style> 
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="wrap">
+                    <img src="국민은행.png" alt="국민은행" width="110" 
+                    a href="https://www.kbstar.com">
+                <div class="userInfo">
+                    <input class="btn1" type="button" value="로그인">
+                    <input class="btn2" type="button" value="인증센터">
+                </div>
+        </div>
+        <div class="topBar" >
+            <span class="border-separator1"
+            >개인 &nbsp;&nbsp; 기업 &nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="border-separator1">
+            &nbsp;&nbsp;금융상품&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="border-separator1">
+            &nbsp;&nbsp;자산관리 &nbsp;&nbsp;부동산 &nbsp;&nbsp;퇴직연금 &nbsp;&nbsp;카드&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="border-separator1">
+            &nbsp;&nbsp;전체서비스&nbsp;&nbsp;▾&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+            &nbsp;&nbsp;global&nbsp;&nbsp;▾&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+                <img src="돋보기.png" alt="돋보기" width="25px">
+            </span>
+        </div>
+
+        <img class="ad" src="배너.png" width=1000px alt="배너">
+    </header>
+
+    <div class="menu1">
+        전체계좌조회 계좌이체 빠른조회
+    </div>
+
+    <div class="menu2">
+        <span class="border-separator2">
+            보안센터
+        </span>
+
+        <span class="border-separator2">
+            &nbsp;고객우대제도
+        </span>
+
+        <span class="border-separator2">
+            &nbsp;소비자보호
+        </span>
+
+        <span class="border-separator2">
+            &nbsp;상담/예약
+        </span> 
+
+        <span>           
+            &nbsp;상품공시실&nbsp;
+        </span> 
+    </div>
+
+    <div class="home" id="news">
+        <span class="title">
+            <h3>새소식</h3>
+            <div class="shortcut">바로가기 ></div>
+        </span>
+        <ul class="newsList">
+            <li>KB 「9To6 Bank」 지점 확대 운영 안내</li>
+            <li>「KB스타뱅킹」 회원가입 절차 개편 안내</li>
+            <li>「KB스타뱅킹」 홈화면 개편 안내</li>
+        </ul>
+    </div>
+
+    <div class="home" id="event">
+        <span class="title">
+            <h3>이벤트</h3>
+            <div class="shortcut">바로가기 ></div>
+        </span>
+        <ul class="newsList">
+            <li>골든라이프 카톡 친구해요~ KB골든라이프 ...</li>
+            <li>이자고민 NoNo! 지갑은 넉넉! 사장님만 드리 ...</li>
+            <li>해외여행 후 남은 USD·JPY·EUR, 재환전 환 ...</li>
+        </ul>
+    </div>
+
+
+    <div class="bn">
+        
+    <div class="bn12">
+            <img  src="배너1.png" alt="배너1" a href="">
+        
+            <img src="배너2.png" alt="배너2" a href="">
+        </div>
+            <img src="배너3.png" alt="배너3" a href="">
+        
+    </div>
+
+    <div class="content">
+        <h3>금융상품</h3>
+        <div class="shortcut">바로가기 ></div>
+        
+    </div>    
+    <div>
+        <img class="middle" src="미들 아이콘.png" alt="미들 아이콘" a href="" width:50px>
+    </div>
+
+    <div class="um">
+        <table class="">
+            <tr>
+                <th>
+                    금융사고예방
+                    
+                </th>
+
+                <div class="small">
+                <th>
+                    <li>
+                        전자금융사기예방 
+                    </li>
+                    <li>
+
+                    </li>서비스
+각종 금융사기수법에 한층 강화된 다양한 전자금융사기예방 서비스로 안전한 인터넷뱅킹 사용이 가능합니다.
+                </th>
+                <th>
+                    <li>
+                        통장(카드) 매매·양도는 불법
+                    </li>
+                    <li>
+                        고객님의 자산을 보호하고 금융사기를 예방하기 위한 최선의 방법은 대포통장 근절입니다.
+                    </li>
+                    
+
+
+                </th>
+                <th>
+                    <li>
+                        사진촬영·QR스캔 절대금지
+                    </li>
+                    <li>
+
+                    </li>
+                    
+타인이 OTP/보안카드 번호를 요구 (2개 초과) 하는 경우는 금융사기이니 절대 응하지 마십시오.
+                </th>
+            </div>
+            </tr>
+        </table>
+    </div>
+
+    <div class="authenticate">
+        <img src="국민인증서.png" alt="국민 인증서">
+    </div>
+
+
+
+    <div class="um2">
+        <table class="">
+            <tr>
+                <th>
+                    
+                        소비자권익보호
+                    
+                </th>
+                <th>
+                    <li>
+                        금융감독원 바로가기
+                    </li>
+                    
+                </th>
+                <th>
+                    <li>
+                        미수령주식 찾아주기 캠페인
+                    </li>
+                    
+                </th>
+                <th>
+                    <li>
+                        비교조회서비스상세목록
+                    </li>
+                    
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="app">
+        KB국민은행 APP
+
+    </div>
+
+    <div class="appicon">
+        <img class="icons" src="바텀 아이콘 2.png" alt="바텀 아이콘2">
+        <img class="icons" src="바텀 아이콘 3.png" alt="바텀 아이콘3">
+        <img class="icons" src="바텀 아이콘4.png" alt="바텀 아이콘4">
+        <img class="icons" src="바텀 아이콘5.png" alt="바텀 아이콘5">
+        <img class="icons" src="바텀 아이콘6.png" alt="바텀 아이콘6">
+    </div>
+</div>
+
+
+
+
+
+
+<div class="box">
+
+</div>
+
+
+
+
+</body>
+</html>
