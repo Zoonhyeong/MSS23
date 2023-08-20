@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            margin: auto;
+            z-index: 1;
+        }
+
+        .wrap {
+            float: left;
+        }
+
+        .btn1, .btn2 {
+            background-color: white;
+            border: 1px solid rgb(215, 215, 215);
+            font-size: 14px;
+        }
+
+        .btn1 {
+            width: 60px;
+            height: 27px;
+        }
+
+        .btn2 {
+            position: relative;
+            left: -5px;
+            width: 70px;
+            height: 27px;
+        }
+
+        a, img {
+            position: relative;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .userInfo {
+            float: left;
+            position: relative;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .content {
+            padding: 0px !important;
+        }
+
+        .menu {
+            height: 80.5px;
+            margin-bottom: 50px;
+        }
+
+        .menu1 {
+        position: inherit;
+        width: 35%;
+        padding:30px;
+        background-color: rgb(247, 208, 72);
+        word-spacing:38px;
+        font-size: 17px;
+        letter-spacing: -0.1em;
+        box-shadow: 0px 5px 30px 0px rgb(216, 216, 216);
+        }
+
+        .menu2 {
+            position: relative;
+            top: -80px;
+            left: 350px;
+            width: 65%;
+            padding:30.98px;
+            background-color: white;
+            font-size: 16px;
+            word-spacing:23px;
+            letter-spacing: -0.1em;
+            box-shadow: 5px 5px 30px 0px rgb(216, 216, 216);
+        }
+
+        .ad {
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        .topBar {
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;
+            font-size: 14px;
+        }
+
+        .border-separator1 {
+            padding-right: 0.1em;
+            border-right: 1px solid #4d4d4d;
+            margin-right: 0.5em;
+        }
+
+        .border-separator2 {
+            padding-right: 0.1em;
+            border-right: 1px solid #dadada;
+            margin-right: 0.5em;
+        }
+
+        h3 {
+            margin: 10px;
+            color: #1e1e1e;
+            font-size: 19.5px;
+        }
+
+        .shortcut {
+            width: 52px;
+            margin: 10px;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .home {
+            display: flex;
+            justify-content: center;
+        }
+
+        .newsList, .title {
+            float: left;
+            list-style-type: none;
+        }
+
+        .date {
+            margin: 0;
+            padding-left: 55px;
+            padding-right: 10px;
+            list-style-type: none;
+            font-size: 12px;
+            line-height: 35px;
+            color: #696969;
+        }
+
+        .newsList {
+            padding: 0;
+            margin-left: 40px;
+            margin-top: 0;
+            font-size: 14px;
+            line-height: 35px;
+            color: #505050;
+        }
+
+        #news, #event {
+            display: flex;
+            margin-left: 21px;
+            margin-right: 21px;
+        }
+
+        .box1 {
+            z-index: 0;
+            position: absolute;
+            top:-1px;
+            width: 100%;
+            height:65%;
+            background-color: rgb(243, 254, 248);
+        }
+
+        .bn {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bn img{
+            padding-top: 25px;
+            width:40%;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .product{
+            display: flex;
+            /* vertical-align: top; */
+            justify-content: center;
+            margin: 0px;
+            padding-top: 50px;
+        }
+
+        .middle{
+            padding-left: 50px;
+        }
+
+        .box2 {
+            z-index: 0;
+            position: absolute;
+            top:1220px;
+            width: 100%;
+            height: 300px;
+            background-color: rgb(247, 246, 246);
+        }
+
+        .protect {
+            display: flex;
+            justify-content: center;
+        }
+
+        h4 {
+            font-size: 18px;
+            padding-right: 20px;
+            color: #1e1e1e;
+        }
+
+        .um {
+            display: flex;
+            flex-direction: column;
+            padding: 80px;
+            padding-right: 20px;
+            padding-left: 20px;
+            /* margin-top: 30px; */
+        }
+
+        .um1{
+            display: flex;
+            border-bottom: 1px solid #c8c8c8;
+        }
+        
+        .um2{
+            display: flex;
+        }
+
+        .small {
+            display: flex;
+        }
+
+        .ti {
+            font-size: 13px;
+            margin: 15px;
+            margin-right: 0;
+            color: #1e1e1e;
+        }
+
+        .exp {
+            line-height: 20px;
+            list-style: none;
+            font-size: 11px;
+            margin-left: 33px;
+            margin-bottom: 15px;
+            color: #8a8a8a;
+        }
+
+        .gr {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .gr2 {
+            width: 187px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        #certi {
+            margin-top: 85px;
+            width: 210px;
+            height: 240px;
+        }
+
+        .app{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #kb {
+            margin-left: 50px;
+        }
+
+        .appicon {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icons {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 70px;
+        }
+
+        #wrapper {
+            height: auto;
+            min-height: 100%;
+            position: relative;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid rgb(201, 201, 201);
+        }
+
+        #fot {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        .bottomBar {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 13px;
+            letter-spacing: -1px;
+            color: #333333;
+        }
+
+        .one {
+            margin-bottom: 10px;
+        }
+        
+        .bbar {
+            margin: 5px;
+            border-right: 1px solid rgb(193, 193, 193);
+        }
+
+        .bbar2 {
+            margin: 5px;
+            border-right: 1px solid rgb(193, 193, 193);
+            font-weight: bold;
+        }
+
+    </style> 
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="wrap">
+                    <img src="국민은행.png" alt="국민은행" width="110" 
+                    a href="https://www.kbstar.com">
+                <div class="userInfo">
+                    <input class="btn1" type="button" value="로그인">
+                    <input class="btn2" type="button" value="인증센터">
+                </div>
+        </div>
+        <div class="topBar" >
+            <span class="border-separator1"
+            >개인 &nbsp;&nbsp; 기업 &nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="border-separator1">
+            &nbsp;&nbsp;금융상품&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="border-separator1">
+            &nbsp;&nbsp;자산관리 &nbsp;&nbsp;부동산 &nbsp;&nbsp;퇴직연금 &nbsp;&nbsp;카드&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="border-separator1">
+            &nbsp;&nbsp;전체서비스&nbsp;&nbsp;▾&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+            &nbsp;&nbsp;GLOBAL&nbsp;&nbsp;▾&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+                <img src="돋보기.png" alt="돋보기" width="25px">
+            </span>
+        </div>
+
+        <img class="ad" src="배너 수정.png" width=1000px alt="배너">
+    </header>
+
+    <section class="content">
+        <div class="menu">
+            <div class="menu1">
+                전체계좌조회 계좌이체 빠른조회
+            </div>
+        
+            <div class="menu2">
+                <span class="border-separator2">
+                    보안센터
+                </span>
+        
+                <span class="border-separator2">
+                    &nbsp;고객우대제도
+                </span>
+        
+                <span class="border-separator2">
+                    &nbsp;소비자보호
+                </span>
+        
+                <span class="border-separator2">
+                    &nbsp;상담/예약
+                </span> 
+        
+                <span>           
+                    &nbsp;상품공시실&nbsp;
+                </span> 
+            </div>
+        </div>
+        
+        <div class="home">
+            <div id="news">
+                <span class="title">
+                    <h3>새소식</h3>
+                    <div class="shortcut"> 바로가기 ></div>
+                </span>
+                <ul class="newsList">
+                    <li>KB 「9To6 Bank」 지점 확대 운영 안내</li>
+                    <li>「KB스타뱅킹」 회원가입 절차 개편 안내</li>
+                    <li>「KB스타뱅킹」 홈화면 개편 안내</li>
+                </ul>
+                <ul class="date">
+                    <li>08.01</li>
+                    <li>07.26</li>
+                    <li>07.26</li>
+                </ul>
+            </div>
+        
+            <div id="event">
+                <span class="title">
+                    <h3>이벤트</h3>
+                    <div 바로가기 class="shortcut"> 바로가기 ></div>
+                </span>
+                <ul class="newsList">
+                    <li>골든라이프 카톡 친구해요~ KB골든라이프 ...</li>
+                    <li>이자고민 NoNo! 지갑은 넉넉! 사장님만 드리...</li>
+                    <li>해외여행 후 남은 USD·JPY·EUR, 재환전 환...</li>
+                </ul>
+                <ul class="date">
+                    <li>07.20 ~ 08.31</li>
+                    <li>07.17 ~ 08.31</li>
+                    <li>07.26 ~ 12.29</li>
+                </ul>
+            </div>
+        </div>
+        
+    
+    
+        <div class="bn">
+            
+                <img  src="배너1.png" alt="배너1" a href="">
+            
+                <img src="배너2.png" alt="배너2" a href="">
+            
+                <img src="배너3.png" alt="배너3" a href="">
+            
+        </div>
+    
+        <div class="product">
+            <span class="title">
+                <h3>금융상품</h3>
+                <div class="shortcut">바로가기 ></div>
+            </span>
+            
+            
+            <img class="middle" src="미들 아이콘.png" alt="미들 아이콘" a href="" width:50px>
+        </div>
+    
+        <div class="protect">
+            <div class="um">
+                <div class="um1">
+                    <h4>
+                        금융사고예방
+                    </h4>
+                    
+                    <div class="small">
+                        <div class="gr">
+                            <li class="ti">전자금융사기예방 서비스</li>
+                            <li class="exp">
+                                각종 금융사기수법에 한층 강화된<br>
+                                다양한 전자금융사기예방 서비스<br>
+                                로 안전한 인터넷뱅킹 사용이 가능<br>
+                                합니다.
+                            </li>
+                        </div>
+                        
+
+                        <div class="gr">
+                            <li class="ti">통장(카드) 매매·양도는 불법</li>
+                            <li class="exp">
+                                고객님의 자산을 보호하고 금융사기<br>
+                                를 예방하기 위한 최선의 방법은 대포<br>
+                                통장 근절입니다.
+                            </li>
+                        </div>
+                        
+                        <div class="gr">
+                            <li class="ti">사진촬영·QR스캔 절대금지</li>
+                            <li class="exp">
+                                타인이 OTP/보안카드 번호를 요구<br>
+                                (2개 초과) 하는 경우는 금융사기이<br>
+                                니 절대 응하지 마십시오.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="um2">
+                    <h4>소비자권익보호</h4>
+                    <div class="gr2">
+                        <li class="ti">금융감독원 바로가기</li>
+                    </div>
+                    <div class="gr2">
+                        <li class="ti">미수령주식 찾아주기 캠페인</li>
+                    </div>
+                    <div class="gr2">
+                        <li class="ti">비교조회서비스</li>
+                    </div>
+                </div>
+            </div>
+
+            <img id="certi" src="국민인증서.png" alt="국민 인증서">
+
+        </div>
+    
+        <div class="app">
+            <h3 id="kb">
+                KB국민은행 APP
+            </h3>
+            <div class="appicon">
+                <img class="icons" src="바텀 아이콘 2.png" alt="바텀 아이콘2">
+                <img class="icons" src="바텀 아이콘 3.png" alt="바텀 아이콘3">
+                <img class="icons" src="바텀 아이콘4.png" alt="바텀 아이콘4">
+                <img class="icons" src="바텀 아이콘5.png" alt="바텀 아이콘5">
+                <img class="icons" src="바텀 아이콘6.png" alt="바텀 아이콘6">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bottomBar">
+            <div class="one">
+                <span class="bbar">
+                    이용상담&nbsp;&nbsp;
+                </span>
+                <span class="bbar">
+                    보안프로그램&nbsp;&nbsp;
+                </span>
+                <span class="bbar">
+                    사고신고&nbsp;&nbsp;
+                </span>
+                <span class="bbar">
+                    보호금융상품등록부&nbsp;&nbsp;
+                </span>
+                <span class="bbar2">
+                    전자민원접수&nbsp;&nbsp;
+                </span>
+                <span class="bbar2">
+                    개인정보처리방침&nbsp;&nbsp;
+                </span>
+                <span class="bbar2">
+                    신용정보활용체제&nbsp;&nbsp;
+                </span>
+                <span class="bbar2">
+                    위치기반서비스 이용약관&nbsp;&nbsp;
+                </span>
+                    경영공시
+            </div>
+            
+            <div id="two">
+                <span class="bbar">
+                    그룹 내 고객정보 제공안내&nbsp;&nbsp;
+                </span>
+                    스튜어드십 코드
+            </div>
+            
+        </div>
+        <img id="fot" src="footer.png" alt="footer">
+    </footer>
+    
+</div>
+
+
+
+<div class="box1">
+
+</div>
+
+<div class="box2">
+
+</div>
+
+
+
+
+</body>
+</html>
